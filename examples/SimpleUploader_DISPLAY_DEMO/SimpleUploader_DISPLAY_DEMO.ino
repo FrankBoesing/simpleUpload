@@ -20,7 +20,6 @@
  */
 
 #include "simpleUpload.h"
-#include "tower.h"
 #include "SPI.h"
 #include "ILI9341_t3.h"
 
@@ -72,7 +71,6 @@ void picture(void) {
 }
 
 void setup() {
-   initTower();
    tft.begin();
    tft.setRotation(3);
    tft.fillScreen(ILI9341_BLACK);   
